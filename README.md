@@ -240,18 +240,62 @@ Commit your code.
 
 ## Any questions about Grunt?
 
+Feel free to ask anything and we'll discuss it here.
+
 ## Comparison with Gulp
 
-If time allows and someone is willing to talk about Gulp, we can recreate what we have built in Grunt with Gulp.
-
-
-
+If time allows and someone is willing to talk about Gulp, we can recreate what we have built in Grunt with Gulp and compare the result.
 
 
 ## Bower
 
+Bower is a front-end dependencies management tool. It makes it easy to install these dependencies and keep track of their versions.
 
+If you haven't installed it already, run
 
+```
+npm install -g bower
+```
+
+## Initial bower.json
+
+When starting a new project, you could copy/paste your bower.json configuration from a different project but it might be better to start with a fresh one:
+
+```
+bower init
+```
+
+## Install a third party library
+
+You can install a library by running bower install followed by the name of that library.
+
+```
+bower install jquery
+```
+
+However, if you do this, your bower.json won't know what you just installed. Add --save or --save-dev to your installation.
+
+```
+bower install jquery --save
+```
+
+The difference between --save and --save-dev is that --save is a library you mean to be used in production and --save-dev is for libraries you won't publish as part of your deployed code, but are used nonetheless during your development. 
+
+For example, the sass library of Twitter Bootstrap is  used during development to generate your CSS code, but it won't be published in deployment as such.
+
+The distinction betweem --save and --save-dev is more to help keep your dependencies purpose clearer, but it's not a very big nor important difference.
+
+## Install all libraries
+
+Should you start a project with just a bower.json configuration and no bower_components installed, you can install all your dependencies with:
+
+```
+bower install
+```
+
+## Exercise
+
+Install the usual libraries you work with and make sure they become part of your bower.json configuration.
 
 
 
