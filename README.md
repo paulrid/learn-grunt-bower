@@ -317,10 +317,12 @@ Although it's not ideal, sometimes you need to install more than one version of 
 
 Bower can specify the source of the library to install:
 
+```
   "dependencies": {
     "jquery": "~2.1.4",
     "jquery-1.7.1": "http://code.jquery.com/jquery-1.7.1.js"
   }
+```
 
 ## Exercise
 
@@ -346,12 +348,14 @@ Bower will highlight this conflict and can help resolve it.
 
 Clear your bower.json dependencies and bower_components. Write the following in bower.json
 
+```
   "devDependencies": {
     "bootstrap-sass": "~3.3.5"
   },
   "dependencies": {
     "jquery": "1.7.1"
   }
+```
 
 Run bower install. 
 
