@@ -53,6 +53,75 @@ npm install -g grunt-init
 
 On Windows, your grunt init scaffolding templates are to be installed in %USERPROFILE%\.grunt-init\
 
+There are several templates you can use. The one I recommend is a very simple Gruntfile template.
+
+Got to the correct director and clone this repository:
+
+```
+git clone https://github.com/gruntjs/grunt-init-gruntfile.git
+```
+
+Once that repository is checked out, let's switch back to your own learn-grunt-bower repository directory to create a new Gruntfile from that template.
+
+## Install a Gruntfile from a template
+
+```
+grunt-init gruntfile
+```
+
+You are presented with a series of questions that will make it possible for the template to create the correct Gruntfile.
+
+Commit your code.
+
+```
+git add .
+git commit -m "Basic Gruntfile installed from template."
+```
+
+## Exercise
+
+For your first exercise, we will checkout a new branch in your repository and create a Gruntfile with another scaffolding template.
+
+```
+git checkout -b second-template
+```
+
+Install a second scaffolding template, delete your Gruntfile and run grunt-init to install the alternative template.
+
+Once you're done, commit your new branch.
+
+```
+git add .
+git commit -m "Alternative Gruntfile installed from another template."
+```
+
+You can then switch back to your master branch.
+
+```
+git checkout master
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
