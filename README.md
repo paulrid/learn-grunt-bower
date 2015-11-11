@@ -265,6 +265,10 @@ When starting a new project, you could copy/paste your bower.json configuration 
 bower init
 ```
 
+## Exercise
+
+Compare the usual bower.json you normally have and the bower.json created by bower init. Is there any difference?
+
 ## Install a third party library
 
 You can install a library by running bower install followed by the name of that library.
@@ -297,6 +301,67 @@ bower install
 
 Install the usual libraries you work with and make sure they become part of your bower.json configuration.
 
+## Versions
+
+Check the version of jquery that was installed and documented in bower.json with --save.
+
+It's the latest version, which isn't always what you need.
+
+## Exercise
+
+Pick an earlier version of jquery or some other library and re-run bower install. Check what happens in the bower_components directory.
+
+## Install more than one version of the same library
+
+Although it's not ideal, sometimes you need to install more than one version of the same library. This could be the case for jQuery for example.
+
+Bower can specify the source of the library to install:
+
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery-1.7.1": "http://code.jquery.com/jquery-1.7.1.js"
+  }
+
+## Exercise
+
+Install two versions of the same library for a dependency other than jQuery.
+
+## Dependencies of libraries
+
+Sometimes, a library you install has its own dependency. For example, the bootstrap-sass library has a dependency on jQuery.
+
+## Exercise
+
+Clear dependencies from bower.json and bower_components then install bootstrap-sass. 
+
+Note what has been installed in bower_components and what is written in bower.json as well as the command line log in Git Bash.
+
+## Resolving dependency version conflicts
+
+If you already have jQuery installed as a dependency of your project and you also want to install bootstrap-sass later, you may have a conflict depending on the minium jQuery version bootstrap-sass needs.
+
+Bower will highlight this conflict and can help resolve it.
+
+## Exercise
+
+Clear your bower.json dependencies and bower_components. Write the following in bower.json
+
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.5"
+  },
+  "dependencies": {
+    "jquery": "1.7.1"
+  }
+
+Run bower install. 
+
+```
+bower install
+```
+
+Resolve the conflict with Bower's help. 
+
+Check which version of jQuery is installed and how it's documented in bower.json
 
 
 
