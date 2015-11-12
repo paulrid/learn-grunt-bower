@@ -265,6 +265,8 @@ When starting a new project, you could copy/paste your bower.json configuration 
 bower init
 ```
 
+If this doesn't work in Git Bash on Windows, try your standard Windows command prompt.
+
 ## Exercise
 
 Compare the usual bower.json you normally have and the bower.json created by bower init. Is there any difference?
