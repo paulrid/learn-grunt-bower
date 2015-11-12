@@ -66,7 +66,7 @@ Once that repository is checked out, let's switch back to your own learn-grunt-b
 ## Install a Gruntfile from a template
 
 ```
-grunt-init gruntfile
+grunt-init grunt-init-gruntfile
 ```
 
 You are presented with a series of questions that will make it possible for the template to create the correct Gruntfile.
