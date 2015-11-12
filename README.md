@@ -367,6 +367,19 @@ Resolve the conflict with Bower's help.
 
 Check which version of jQuery is installed and how it's documented in bower.json
 
+## Create your own Bower library
+
+It's possible to make a private Bower library and place it on Stash, so that it can only be accessed within the company.
+
+You can then organise your dependencies and give each of them its own repository.
+
+On Stash, go to your profile page and create your own repository there.
+
+You can then write any code you want to turn into a library and add a bower.json to that repository, so that your dependency has its own dependencies too.
+
+## Exercise
+
+Create a simple hello-world.js library on Stash and include it in your forked learn-grunt-bower repository.
 
 
 
